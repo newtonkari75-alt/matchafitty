@@ -68,8 +68,8 @@
         {
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "Qual a diferença entre MatchaFitty e o chá verde comum?", "acceptedAnswer": { "@type": "Answer", "text": "Com o MatchaFitty você consome a folha inteira cultivada à sombra e moída em pedra." } },
-            { "@type": "Question", "name": "O MatchaFitty contém cafeína?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, mas a presença de L-Teanina libera a energia de forma gradual." } }
+            { "@type": "Question", "name": "What is the difference between MatchaFitty and regular green tea?", "acceptedAnswer": { "@type": "Answer", "text": "Unlike traditional green tea where the leaves are steeped and discarded, with MatchaFitty you consume the entire shade-grown, stone-ground leaf." } },
+            { "@type": "Question", "name": "Does MatchaFitty contain caffeine?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but the abundant presence of L-Theanine releases the energy gradually." } }
           ]
         }
       ]
@@ -100,7 +100,7 @@
         .hero-section-bg { background-color: #ECFDF5; position: relative; overflow: hidden; }
         .hero-bg-overlay {
             position: absolute; inset: 0;
-            background-image: url('images/imgi_52_h-bg.png'); /* Certifique-se que a imagem é apenas decorativa */
+            background-image: url('images/imgi_52_h-bg.png');
             background-size: cover; background-position: center;
             opacity: 0.12; mix-blend-mode: multiply;
         }
@@ -124,46 +124,45 @@
 </head>
 <body class="bg-white text-gray-800 relative overflow-x-hidden">
 
-    <!-- Cabeçalho (Adicionado Navegação para mostrar que é um site real) -->
+    <!-- Header -->
     <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-between items-center p-4">
             <img src="images/matchafitty-logo.png" onerror="this.src='https://via.placeholder.com/150x40?text=MatchaFitty'" width="120" height="30" alt="MatchaFitty Logo" class="h-8 w-auto">
-            <a href="#order" class="bg-[#064E3B] text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-[#14532D] transition-colors" data-translate="nav_order">Comprar Agora</a>
+            <a href="#order" class="bg-[#064E3B] text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-[#14532D] transition-colors" data-translate="nav_order">Order Now</a>
         </div>
     </header>
 
     <main>
-        <!-- Secção Hero (Promessas Suavizadas e Focadas em Bem-estar) -->
+        <!-- Hero Section -->
         <section id="order" class="hero-section-bg text-[#14532D] py-16 md:py-24 min-h-[85vh] flex items-center">
             <div class="hero-bg-overlay"></div>
             
             <div class="container relative z-10 mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12 items-center">
                     
-                    <!-- LADO ESQUERDO: TEXTO -->
+                    <!-- LEFT SIDE: TEXT -->
                     <div class="reveal flex flex-col items-center lg:items-start order-2 lg:order-1">
                         
                         <div class="glass-panel rounded-full px-4 py-1.5 mb-6 inline-flex items-center gap-3 shadow-sm">
                             <div class="flex items-center gap-1">
                                 <i class="star-filled w-4 h-4" data-feather="star" style="fill: #4D7C0F;"></i>
-                                <span class="font-bold text-xs text-[#064E3B]">4.9/5 (8.450+ Avaliações)</span>
+                                <span class="font-bold text-xs text-[#064E3B]">4.9/5</span>
                             </div>
                             <div class="w-px h-3 bg-gray-300"></div>
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-[#4D7C0F]" data-translate="discount_badge">✨ OFERTA ESPECIAL: 50% OFF</span>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-[#4D7C0F]" data-translate="discount_badge"><i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> SPECIAL OFFER: 50% OFF</span>
                         </div>
 
                         <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight tracking-tight text-[#064E3B] text-center lg:text-left" data-translate="hero_title">
-                            Energia Natural e Foco Diário com MatchaFitty™
+                            Natural Energy & Daily Focus with MatchaFitty™
                         </h1>
                         
                         <p class="text-base md:text-lg mb-10 text-[#14532D] leading-relaxed font-medium opacity-90 text-center lg:text-left" data-translate="hero_desc">
-                            O mais puro matcha orgânico japonês. Uma fonte rica em antioxidantes para apoiar sua vitalidade, foco mental e bem-estar geral, sem os picos e quedas de energia do café tradicional.
+                            The purest Japanese organic matcha. A rich source of antioxidants to support vitality and mental focus without the coffee crash.
                         </p>
 
                         <div class="w-full max-w-lg reveal">
-                            <p class="text-[11px] font-bold uppercase tracking-widest text-[#4D7C0F] mb-5 text-center lg:text-left" data-translate="select_cta"><i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> ESCOLHA SUA REGIÃO PARA PROSSEGUIR:</p>
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-[#4D7C0F] mb-5 text-center lg:text-left" data-translate="select_cta"><i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> SELECT YOUR REGION TO CONTINUE:</p>
                             <div class="grid grid-cols-2 gap-4" role="navigation" aria-label="Country Selection">
-                                <!-- Links alterados para âncoras internas (#order). No mundo real, levariam ao seu checkout ou página de carrinho do seu próprio domínio -->
                                 <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm" aria-label="Order for Poland">
                                     <img src="https://flagcdn.com/w40/pl.png" class="w-7 h-auto rounded-sm" alt="PL">
                                     <span class="font-bold text-sm text-[#064E3B]">Poland</span>
@@ -184,7 +183,7 @@
                         </div>
                     </div>
 
-                    <!-- LADO DIREITO: FOTO -->
+                    <!-- RIGHT SIDE: IMAGE -->
                     <div class="flex justify-center items-center h-full reveal order-1 lg:order-2">
                         <div class="relative w-full max-w-[280px] md:max-w-[420px] lg:max-w-[480px]">
                             <div class="absolute -inset-10 bg-white/20 blur-[80px] rounded-full"></div>
@@ -196,78 +195,78 @@
             </div>
         </section>
 
-        <!-- SEÇÃO FAQ (Efeito Sanfona Estratégico) -->
+        <!-- FAQ Section -->
         <section id="faq" class="py-20 bg-gray-50">
             <div class="container mx-auto px-4 max-w-4xl reveal">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-black text-[#064E3B] mb-4" data-translate="faq_title">Perguntas Frequentes</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto text-lg" data-translate="faq_subtitle">Tudo o que você precisa saber sobre o MatchaFitty™</p>
+                    <h2 class="text-3xl md:text-4xl font-black text-[#064E3B] mb-4" data-translate="faq_title">Frequently Asked Questions</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto text-lg" data-translate="faq_subtitle">Everything you need to know about MatchaFitty™</p>
                 </div>
                 
                 <div class="space-y-4">
                     <!-- FAQ 1 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq1">
-                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q1">Qual a diferença entre MatchaFitty e o chá verde comum?</span>
+                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q1">What is the difference between MatchaFitty and regular green tea?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
                         <div id="faq1" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a1">
-                            Diferente do chá verde tradicional onde as folhas são infundidas e descartadas, com o MatchaFitty você consome a folha inteira cultivada à sombra e moída em pedra. Isso significa que você absorve 100% dos nutrientes e uma concentração significativamente maior de antioxidantes.
+                            Unlike traditional green tea where the leaves are steeped and discarded, with MatchaFitty you consume the entire shade-grown, stone-ground leaf. This means you absorb 100% of the nutrients and a significantly higher concentration of antioxidants.
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq2">
-                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q2">O MatchaFitty contém cafeína? Vai me deixar agitado?</span>
+                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q2">Does MatchaFitty contain caffeine? Will it give me jitters?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
                         <div id="faq2" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a2">
-                            Sim, contém cafeína natural. No entanto, a presença abundante do aminoácido L-Teanina altera a forma como a cafeína é absorvida, liberando a energia de forma gradual. Isso proporciona um estado de alerta e foco mental profundo, sem a agitação nervosa ou a "queda" brusca associada ao café.
+                            Yes, it contains natural caffeine. However, the abundant presence of the amino acid L-Theanine alters how the caffeine is absorbed, releasing energy gradually. This provides deep mental focus and alertness without the nervous jitters or sharp "crash" associated with coffee.
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q3">Como devo preparar o meu MatchaFitty?</span>
+                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q3">How should I prepare my MatchaFitty?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a3">
-                            É extremamente versátil. Você pode misturar meia colher de chá (cerca de 1 a 2 gramas) com água quente (não fervente) para um chá tradicional, adicionar ao seu leite favorito (vegetal ou animal) para um delicioso Matcha Latte, ou até mesmo incorporar em smoothies e receitas saudáveis.
+                            It is extremely versatile. You can mix half a teaspoon (about 1 to 2 grams) with hot (not boiling) water for a traditional tea, add it to your favorite milk (plant-based or dairy) for a delicious Matcha Latte, or even blend it into healthy smoothies and recipes.
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q4">O produto é adequado para dietas veganas e sem glúten?</span>
+                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q4">Is the product suitable for vegan and gluten-free diets?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a4">
-                            Absolutamente. MatchaFitty é composto por um único ingrediente: folhas de chá verde japonês 100% orgânicas. É totalmente vegano, sem glúten, sem laticínios, sem adição de açúcares e livre de ingredientes geneticamente modificados (Não-OGM).
+                            Absolutely. MatchaFitty consists of a single ingredient: 100% organic Japanese green tea leaves. It is completely vegan, gluten-free, dairy-free, contains no added sugars, and is free of genetically modified organisms (Non-GMO).
                         </div>
                     </div>
 
                     <!-- FAQ 5 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q5">Quanto tempo dura uma embalagem?</span>
+                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q5">How long does one package last?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a5">
-                            Uma embalagem contém o suprimento ideal para um mês completo (aproximadamente 30 porções), considerando o uso diário recomendado para obter os melhores resultados em foco e metabolismo.
+                            One package contains the ideal supply for a full month (approximately 30 servings), considering the recommended daily use for optimal results in focus and metabolism.
                         </div>
                     </div>
 
                     <!-- FAQ 6 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                         <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q6">Como funcionam os envios para o meu país?</span>
+                            <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q6">How does shipping to my country work?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
                         <div class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a6">
-                            Temos operações logísticas otimizadas na Europa para garantir envios rápidos. Assim que você escolher seu país na página inicial e concluir o processo, seu pedido será despachado de forma segura e você receberá atualizações sobre a entrega.
+                            We have optimized logistics operations in Europe to ensure fast shipping. Once you select your country on the homepage and complete the process, your order will be securely dispatched, and you will receive delivery updates.
                         </div>
                     </div>
                 </div>
@@ -276,18 +275,17 @@
 
     </main>
 
-    <!-- Rodapé (Totalmente reformulado com dados empresariais críveis) -->
+    <!-- Footer -->
     <footer class="bg-[#064E3B] text-green-50 py-16 border-t border-[#14532D]">
         <div class="container mx-auto px-4 text-center text-sm">
             <div class="flex flex-col items-center justify-center mb-10 gap-4">
                 <img src="images/matchafitty-logo.png" onerror="this.src='https://via.placeholder.com/150x40?text=MatchaFitty'" width="120" height="30" alt="Logo" class="h-8 w-auto brightness-0 invert opacity-90">
                 
-                <!-- INFORMAÇÕES VITAIS PARA O GOOGLE ADS: Endereço e Contato -->
                 <div class="text-green-100/70 text-xs max-w-md mt-4">
                     <p class="font-bold mb-1">MatchaFitty Europe Ltd.</p>
                     <p>123 Green Wellness Street, Suite 400</p>
-                    <p>00-001 Varsóvia, Polônia (VAT: PL123456789)</p>
-                    <p class="mt-2">E-mail: <a href="mailto:support@matchafitty.com" class="hover:text-white">support@matchafitty.com</a></p>
+                    <p>00-001 Warsaw, Poland (VAT: PL123456789)</p>
+                    <p class="mt-2">Email: <a href="mailto:support@matchafitty.com" class="hover:text-white">support@matchafitty.com</a></p>
                 </div>
             </div>
             
@@ -298,15 +296,14 @@
             </div>
 
             <div class="border-t border-white/5 pt-8 text-[10px] text-green-100/40 max-w-4xl mx-auto space-y-4 leading-relaxed">
-                <!-- Aviso legal suavizado e focado em suplemento alimentar -->
                 <p>This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Always consult with a healthcare professional before starting any new supplement, especially if you are pregnant, nursing, or taking medications. Results may vary.</p>
                 <p>This site is not a part of the Google™ or Facebook™ website. Google™ and Facebook™ are trademarks of their respective owners.</p>
-                <p>© 2026 MatchaFitty™. Distribuidor Autorizado.</p>
+                <p>© 2026 MatchaFitty™. Authorized Distributor.</p>
             </div>
         </div>
     </footer>
 
-    <!-- MODAL LEGAIS (Limpamos referências a iframes de terceiros) -->
+    <!-- MODAL -->
     <div id="policy-modal" class="fixed inset-0 z-50 hidden">
         <div class="fixed inset-0 bg-[#064E3B]/95 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
@@ -320,7 +317,7 @@
                     </div>
                     <div class="p-10 overflow-y-auto text-sm text-gray-600 leading-relaxed max-h-[60vh]" id="modal-content"></div>
                     <div class="bg-gray-50 px-8 py-5 border-t border-gray-100 text-right">
-                        <button onclick="closeModal()" class="bg-[#064E3B] text-white px-10 py-2.5 rounded-xl font-bold text-sm hover:bg-[#14532D] transition-all" data-translate="btn_close">Fechar</button>
+                        <button onclick="closeModal()" class="bg-[#064E3B] text-white px-10 py-2.5 rounded-xl font-bold text-sm hover:bg-[#14532D] transition-all" data-translate="btn_close">Close</button>
                     </div>
                 </div>
             </div>
@@ -329,45 +326,13 @@
 
     <!-- SCRIPT DE TRADUÇÃO E DINÂMICA -->
     <script>
-        // O JS agora reflete os textos compliant e sem promessas agressivas
         const translations = {
-            'pt': {
-                'discount_badge': '<i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> OFERTA ESPECIAL: 50% OFF',
-                'hero_title': 'Energia Natural e Foco Diário com MatchaFitty™',
-                'hero_desc': 'O mais puro matcha orgânico japonês. Uma fonte rica em antioxidantes para apoiar sua vitalidade, foco mental e bem-estar geral, sem os picos e quedas de energia do café tradicional.',
-                'select_cta': '<i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> ESCOLHA SUA REGIÃO PARA PROSSEGUIR:',
-                'nav_faq': 'Dúvidas Frequentes',
-                'nav_order': 'Comprar Agora',
-                
-                'faq_title': 'Perguntas Frequentes',
-                'faq_subtitle': 'Tudo o que você precisa saber sobre o MatchaFitty™',
-                'faq_q1': 'Qual a diferença entre MatchaFitty e o chá verde comum?',
-                'faq_a1': 'Diferente do chá verde tradicional onde as folhas são infundidas e descartadas, com o MatchaFitty você consome a folha inteira cultivada à sombra e moída em pedra. Isso significa que você absorve 100% dos nutrientes e uma concentração significativamente maior de antioxidantes.',
-                'faq_q2': 'O MatchaFitty contém cafeína? Vai me deixar agitado?',
-                'faq_a2': 'Sim, contém cafeína natural. No entanto, a presença abundante do aminoácido L-Teanina altera a forma como a cafeína é absorvida, liberando a energia de forma gradual. Isso proporciona um estado de alerta e foco mental profundo, sem a agitação nervosa ou a "queda" brusca associada ao café.',
-                'faq_q3': 'Como devo preparar o meu MatchaFitty?',
-                'faq_a3': 'É extremamente versátil. Você pode misturar meia colher de chá (cerca de 1 a 2 gramas) com água quente (não fervente) para um chá tradicional, adicionar ao seu leite favorito (vegetal ou animal) para um delicioso Matcha Latte, ou até mesmo incorporar em smoothies e receitas saudáveis.',
-                'faq_q4': 'O produto é adequado para dietas veganas e sem glúten?',
-                'faq_a4': 'Absolutamente. MatchaFitty é composto por um único ingrediente: folhas de chá verde japonês 100% orgânicas. É totalmente vegano, sem glúten, sem laticínios, sem adição de açúcares e livre de ingredientes geneticamente modificados (Não-OGM).',
-                'faq_q5': 'Quanto tempo dura uma embalagem?',
-                'faq_a5': 'Uma embalagem contém o suprimento ideal para um mês completo (aproximadamente 30 porções), considerando o uso diário recomendado para obter os melhores resultados em foco e metabolismo.',
-                'faq_q6': 'Como funcionam os envios para o meu país?',
-                'faq_a6': 'Temos operações logísticas otimizadas na Europa para garantir envios rápidos. Assim que você escolher seu país na página inicial e concluir o processo, seu pedido será despachado de forma segura e você receberá atualizações sobre a entrega.',
-                
-                'btn_close': 'Fechar',
-                'link_privacy': 'Privacidade',
-                'link_terms': 'Termos e Condições',
-                'link_refund': 'Reembolsos',
-                'meta_title': 'MatchaFitty™ | Energia Natural e Foco'
-            },
             'en': {
                 'discount_badge': '<i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> SPECIAL OFFER: 50% OFF',
                 'hero_title': 'Natural Energy & Daily Focus with MatchaFitty™',
                 'hero_desc': 'The purest Japanese organic matcha. A rich source of antioxidants to support vitality and mental focus without the coffee crash.',
                 'select_cta': '<i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> SELECT YOUR REGION TO CONTINUE:',
-                'nav_faq': 'FAQ',
                 'nav_order': 'Order Now',
-                
                 'faq_title': 'Frequently Asked Questions',
                 'faq_subtitle': 'Everything you need to know about MatchaFitty™',
                 'faq_q1': 'What is the difference between MatchaFitty and regular green tea?',
@@ -382,12 +347,115 @@
                 'faq_a5': 'One package contains the ideal supply for a full month (approximately 30 servings), considering the recommended daily use for optimal results in focus and metabolism.',
                 'faq_q6': 'How does shipping to my country work?',
                 'faq_a6': 'We have optimized logistics operations in Europe to ensure fast shipping. Once you select your country on the homepage and complete the process, your order will be securely dispatched, and you will receive delivery updates.',
-
                 'btn_close': 'Close',
-                'link_privacy': 'Privacy',
-                'link_terms': 'Terms',
-                'link_refund': 'Refunds',
-                'meta_title': 'MatchaFitty™ | Natural Energy'
+                'link_privacy': 'Privacy Policy',
+                'link_terms': 'Terms & Conditions',
+                'link_refund': 'Refund Policy',
+                'meta_title': 'MatchaFitty™ | Natural Energy & Focus'
+            },
+            'pl': {
+                'discount_badge': '<i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> OFERTA SPECJALNA: -50%',
+                'hero_title': 'Naturalna Energia i Skupienie z MatchaFitty™',
+                'hero_desc': 'Najczystsza organiczna japońska matcha. Bogate źródło antyoksydantów wspierające witalność i koncentrację, bez nagłych spadków energii.',
+                'select_cta': '<i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> WYBIERZ SWÓJ REGION:',
+                'nav_order': 'Zamów Teraz',
+                'faq_title': 'Często Zadawane Pytania',
+                'faq_subtitle': 'Wszystko, co musisz wiedzieć o MatchaFitty™',
+                'faq_q1': 'Jaka jest różnica między MatchaFitty a zwykłą zieloną herbatą?',
+                'faq_a1': 'W przeciwieństwie do tradycyjnej zielonej herbaty, z MatchaFitty spożywasz cały liść, który został zmielony na proszek. Oznacza to, że przyswajasz 100% składników odżywczych i znacznie większą koncentrację przeciwutleniaczy.',
+                'faq_q2': 'Czy MatchaFitty zawiera kofeinę? Czy będę po niej pobudzony?',
+                'faq_a2': 'Tak, zawiera naturalną kofeinę. Jednak dzięki obecności L-teaniny kofeina wchłania się wolniej, uwalniając energię stopniowo. Zapewnia to jasność umysłu bez uczucia niepokoju charakterystycznego dla kawy.',
+                'faq_q3': 'Jak powinnam/powinienem przygotować MatchaFitty?',
+                'faq_a3': 'Jest bardzo wszechstronna. Możesz wymieszać pół łyżeczki z gorącą (nie wrzącą) wodą dla tradycyjnej herbaty, dodać do ulubionego mleka tworząc Matcha Latte, lub zblendować w smoothie.',
+                'faq_q4': 'Czy produkt jest odpowiedni dla wegan i osób na diecie bezglutenowej?',
+                'faq_a4': 'Absolutnie. MatchaFitty to w 100% organiczne liście japońskiej zielonej herbaty. Jest produktem wegańskim, bezglutenowym, bez dodatku cukru i bez GMO.',
+                'faq_q5': 'Na jak długo wystarcza jedno opakowanie?',
+                'faq_a5': 'Jedno opakowanie to idealny zapas na cały miesiąc (około 30 porcji), przy założeniu optymalnego codziennego stosowania.',
+                'faq_q6': 'Jak działa wysyłka do mojego kraju?',
+                'faq_a6': 'Posiadamy zoptymalizowaną logistykę w Europie. Po wybraniu kraju i dokończeniu zamówienia, paczka zostanie bezpiecznie wysłana, a Ty otrzymasz link do śledzenia przesyłki.',
+                'btn_close': 'Zamknij',
+                'link_privacy': 'Polityka Prywatności',
+                'link_terms': 'Regulamin',
+                'link_refund': 'Zwroty',
+                'meta_title': 'MatchaFitty™ | Naturalna Energia'
+            },
+            'it': {
+                'discount_badge': '<i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> OFFERTA SPECIALE: -50%',
+                'hero_title': 'Energia Naturale e Focus con MatchaFitty™',
+                'hero_desc': 'Il più puro matcha biologico giapponese. Una ricca fonte di antiossidanti per supportare vitalità e concentrazione mentale senza il calo di energia del caffè.',
+                'select_cta': '<i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> SELEZIONA LA TUA REGIONE:',
+                'nav_order': 'Ordina Ora',
+                'faq_title': 'Domande Frequenti',
+                'faq_subtitle': 'Tutto ciò che devi sapere su MatchaFitty™',
+                'faq_q1': 'Qual è la differenza tra MatchaFitty e il tè verde normale?',
+                'faq_a1': 'A differenza del tè verde tradizionale, con MatchaFitty consumi l\'intera foglia macinata a pietra. Questo significa assorbire il 100% dei nutrienti e una maggiore concentrazione di antiossidanti.',
+                'faq_q2': 'MatchaFitty contiene caffeina?',
+                'faq_a2': 'Sì, contiene caffeina naturale. Tuttavia, l\'aminoacido L-Teanina altera il modo in cui la caffeina viene assorbita, rilasciando l\'energia gradualmente. Offre concentrazione senza agitazione.',
+                'faq_q3': 'Come devo preparare il mio MatchaFitty?',
+                'faq_a3': 'È molto versatile. Puoi mescolare mezzo cucchiaino con acqua calda per un tè tradizionale, aggiungerlo al tuo latte preferito per un Matcha Latte, o in un frullato sano.',
+                'faq_q4': 'È adatto ai vegani e ai celiaci?',
+                'faq_a4': 'Assolutamente. MatchaFitty è 100% matcha biologico. È vegano, senza glutine, senza latticini e senza OGM.',
+                'faq_q5': 'Quanto dura una confezione?',
+                'faq_a5': 'Una confezione è la scorta ideale per un mese completo (circa 30 porzioni) per un uso quotidiano.',
+                'faq_q6': 'Come funziona la spedizione nel mio paese?',
+                'faq_a6': 'Abbiamo una logistica ottimizzata in Europa. Una volta completato l\'ordine, verrà spedito rapidamente e riceverai aggiornamenti sulla consegna.',
+                'btn_close': 'Chiudi',
+                'link_privacy': 'Privacy Policy',
+                'link_terms': 'Termini e Condizioni',
+                'link_refund': 'Politica di Rimborso',
+                'meta_title': 'MatchaFitty™ | Energia Naturale'
+            },
+            'ro': {
+                'discount_badge': '<i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> OFERTĂ SPECIALĂ: -50%',
+                'hero_title': 'Energie Naturală și Concentrare cu MatchaFitty™',
+                'hero_desc': 'Cel mai pur matcha organic japonez. O sursă bogată de antioxidanți pentru a susține vitalitatea și concentrarea mentală.',
+                'select_cta': '<i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> SELECTAȚI REGIUNEA DVS.:',
+                'nav_order': 'Comandă Acum',
+                'faq_title': 'Întrebări Frecvente',
+                'faq_subtitle': 'Tot ce trebuie să știi despre MatchaFitty™',
+                'faq_q1': 'Care este diferența dintre MatchaFitty și ceaiul verde obișnuit?',
+                'faq_a1': 'Spre deosebire de ceaiul verde tradițional, cu MatchaFitty consumi întreaga frunză măcinată pe piatră. Asta înseamnă că absorbi 100% din nutrienți și antioxidanți.',
+                'faq_q2': 'Conține cofeină?',
+                'faq_a2': 'Da, conține cofeină naturală. Totuși, prezența L-Teaninei eliberează energia treptat, oferind concentrare fără stări de agitație.',
+                'faq_q3': 'Cum se prepară?',
+                'faq_a3': 'Se amestecă o jumătate de linguriță cu apă fierbinte (nu clocotită) pentru un ceai tradițional, sau se adaugă în lapte vegetal pentru un Matcha Latte.',
+                'faq_q4': 'Este produsul potrivit pentru vegani?',
+                'faq_a4': 'Absolut. MatchaFitty este 100% organic, vegan, fără gluten, fără lactoză și fără OMG-uri.',
+                'faq_q5': 'Cât timp durează un pachet?',
+                'faq_a5': 'Un pachet conține porția ideală pentru o lună întreagă (aproximativ 30 de porții).',
+                'faq_q6': 'Cum funcționează livrarea?',
+                'faq_a6': 'Avem operațiuni logistice optimizate în Europa. După selectarea țării, comanda dvs. va fi expediată în siguranță.',
+                'btn_close': 'Închide',
+                'link_privacy': 'Confidențialitate',
+                'link_terms': 'Termeni',
+                'link_refund': 'Rambursări',
+                'meta_title': 'MatchaFitty™ | Energie Naturală'
+            },
+            'sk': {
+                'discount_badge': '<i data-feather="award" class="inline-block w-3 h-3 mb-0.5 mr-1"></i> ŠPECIÁLNA PONUKA: -50%',
+                'hero_title': 'Prirodzená Energia a Sústredenie s MatchaFitty™',
+                'hero_desc': 'Najčistejšia japonská organická matcha. Bohatý zdroj antioxidantov na podporu vitality a duševného sústredenia bez únavy z kávy.',
+                'select_cta': '<i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> VYBERTE SI SVOJ REGIÓN:',
+                'nav_order': 'Objednať Teraz',
+                'faq_title': 'Často kladené otázky',
+                'faq_subtitle': 'Všetko, čo potrebujete vedieť o MatchaFitty™',
+                'faq_q1': 'Aký je rozdiel medzi MatchaFitty a bežným zeleným čajom?',
+                'faq_a1': 'Na rozdiel od tradičného zeleného čaju, pri MatchaFitty konzumujete celý pomletý list. To znamená, že absorbujete 100% živín a antioxidantov.',
+                'faq_q2': 'Obsahuje MatchaFitty kofeín?',
+                'faq_a2': 'Áno, obsahuje prírodný kofeín. Prítomnosť L-teanínu však energiu uvoľňuje postupne, čím poskytuje sústredenie bez nervozity.',
+                'faq_q3': 'Ako by som mal pripraviť svoju MatchaFitty?',
+                'faq_a3': 'Zmiešajte polovicu čajovej lyžičky s horúcou (nie vriacou) vodou na tradičný čaj, alebo pridajte do svojho obľúbeného mlieka na Matcha Latte.',
+                'faq_q4': 'Je produkt vhodný pre vegánov a celiatikov?',
+                'faq_a4': 'Absolútne. MatchaFitty je 100% organický, vegánsky, bezlepkový čaj bez GMO.',
+                'faq_q5': 'Ako dlho vydrží jedno balenie?',
+                'faq_a5': 'Jedno balenie obsahuje ideálnu zásobu na celý mesiac (približne 30 porcií).',
+                'faq_q6': 'Ako funguje doprava do mojej krajiny?',
+                'faq_a6': 'Máme optimalizovanú logistiku v Európe. Po výbere krajiny bude vaša objednávka rýchlo a bezpečne odoslaná.',
+                'btn_close': 'Zatvoriť',
+                'link_privacy': 'Ochrana súkromia',
+                'link_terms': 'Podmienky',
+                'link_refund': 'Vrátenie peňazí',
+                'meta_title': 'MatchaFitty™ | Prirodzená Energia'
             }
         };
 
@@ -411,7 +479,9 @@
         document.addEventListener('DOMContentLoaded', () => {
             const userLang = navigator.language.substring(0, 2).toLowerCase(); 
             const urlParams = new URLSearchParams(window.location.search);
-            const targetLang = urlParams.get('lang') || (translations[userLang] ? userLang : 'pt'); // Default to PT for demonstration
+            
+            // O idioma padrão agora é 'en' (Inglês) se não for pl, it, ro, ou sk
+            const targetLang = urlParams.get('lang') || (translations[userLang] ? userLang : 'en'); 
 
             if (translations[targetLang]) {
                 document.querySelectorAll('[data-translate]').forEach(el => {
@@ -424,7 +494,6 @@
                 document.documentElement.lang = targetLang;
             }
             
-            // Renderiza os ícones após a injeção do texto traduzido
             feather.replace();
         });
 
@@ -436,14 +505,13 @@
         window.addEventListener("scroll", reveal);
         reveal();
 
-        // Lógica do Efeito Sanfona (Accordion) para o FAQ com Acessibilidade (ARIA)
+        // FAQ Accordion Logic
         document.querySelectorAll('.faq-button').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
                 const icon = button.querySelector('i');
                 const isHidden = content.classList.contains('hidden');
 
-                // Fechar todos os outros abertos
                 document.querySelectorAll('.faq-content').forEach(c => {
                     c.classList.add('hidden');
                 });
@@ -452,7 +520,6 @@
                     b.querySelector('i').style.transform = 'rotate(0deg)';
                 });
 
-                // Abrir o selecionado se estava fechado
                 if (isHidden) {
                     content.classList.remove('hidden');
                     button.setAttribute('aria-expanded', 'true');
