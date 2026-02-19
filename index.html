@@ -23,7 +23,60 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="theme-color" content="#ECFDF5" />
 
-    <!-- 4. Open Graph / Social SEO -->
+    <!-- 4. SEO Internacional (Canonical e Hreflang) -->
+    <link rel="canonical" href="https://matchafitty.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://matchafitty.vercel.app/" />
+    <link rel="alternate" hreflang="pl-PL" href="https://matchafitty.vercel.app/?lang=pl" />
+    <link rel="alternate" hreflang="it-IT" href="https://matchafitty.vercel.app/?lang=it" />
+    <link rel="alternate" hreflang="ro-RO" href="https://matchafitty.vercel.app/?lang=ro" />
+    <link rel="alternate" hreflang="sk-SK" href="https://matchafitty.vercel.app/?lang=sk" />
+
+    <!-- 5. Dados Estruturados (JSON-LD) - Essencial para Google Ads e Bot -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://matchafitty.vercel.app/#organization",
+          "name": "MatchaFitty Europe Ltd.",
+          "url": "https://matchafitty.vercel.app/",
+          "logo": "https://matchafitty.vercel.app/images/matchafitty-logo.png",
+          "contactPoint": { "@type": "ContactPoint", "email": "support@matchafitty.com", "contactType": "customer support" }
+        },
+        {
+          "@type": "Product",
+          "name": "MatchaFitty™ Premium Formula",
+          "image": "https://matchafitty.vercel.app/images/matchafitty3.png",
+          "description": "Premium organic Japanese matcha rich in antioxidants.",
+          "brand": { "@type": "Brand", "name": "MatchaFitty" },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "EUR",
+            "lowPrice": "39.00",
+            "highPrice": "39.00",
+            "offerCount": "1",
+            "availability": "https://schema.org/InStock",
+            "eligibleRegion": [
+              { "@type": "Country", "name": "PL" },
+              { "@type": "Country", "name": "IT" },
+              { "@type": "Country", "name": "RO" },
+              { "@type": "Country", "name": "SK" }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Qual a diferença entre MatchaFitty e o chá verde comum?", "acceptedAnswer": { "@type": "Answer", "text": "Com o MatchaFitty você consome a folha inteira cultivada à sombra e moída em pedra." } },
+            { "@type": "Question", "name": "O MatchaFitty contém cafeína?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, mas a presença de L-Teanina libera a energia de forma gradual." } }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- 6. Open Graph / Social SEO -->
     <meta property="og:type" content="product" />
     <meta property="og:site_name" content="MatchaFitty™ Official" />
     <meta property="og:url" content="https://matchafitty.vercel.app/" />
@@ -75,9 +128,6 @@
     <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-between items-center p-4">
             <img src="images/matchafitty-logo.png" onerror="this.src='https://via.placeholder.com/150x40?text=MatchaFitty'" width="120" height="30" alt="MatchaFitty Logo" class="h-8 w-auto">
-            <nav class="hidden md:flex gap-6 text-sm font-semibold text-[#14532D]">
-                <a href="#faq" class="hover:text-[#4D7C0F] transition-colors" data-translate="nav_faq">Dúvidas Frequentes</a>
-            </nav>
             <a href="#order" class="bg-[#064E3B] text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-[#14532D] transition-colors" data-translate="nav_order">Comprar Agora</a>
         </div>
     </header>
@@ -111,22 +161,22 @@
                         </p>
 
                         <div class="w-full max-w-lg reveal">
-                            <p class="text-[11px] font-bold uppercase tracking-widest text-[#4D7C0F] mb-5 text-center lg:text-left" data-translate="select_cta">👉 ESCOLHA SUA REGIÃO PARA PROSSEGUIR:</p>
-                            <div class="grid grid-cols-2 gap-4">
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-[#4D7C0F] mb-5 text-center lg:text-left" data-translate="select_cta"><i data-feather="map-pin" class="inline-block w-3.5 h-3.5 mb-0.5 mr-1"></i> ESCOLHA SUA REGIÃO PARA PROSSEGUIR:</p>
+                            <div class="grid grid-cols-2 gap-4" role="navigation" aria-label="Country Selection">
                                 <!-- Links alterados para âncoras internas (#order). No mundo real, levariam ao seu checkout ou página de carrinho do seu próprio domínio -->
-                                <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
+                                <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm" aria-label="Order for Poland">
                                     <img src="https://flagcdn.com/w40/pl.png" class="w-7 h-auto rounded-sm" alt="PL">
                                     <span class="font-bold text-sm text-[#064E3B]">Poland</span>
                                 </a>
-                                <a href="#" class="btn-country flex items-center gap-3 p-4 rounded-2xl shadow-sm">
+                                <a href="#" class="btn-country flex items-center gap-3 p-4 rounded-2xl shadow-sm" aria-label="Order for Italy">
                                     <img src="https://flagcdn.com/w40/it.png" class="w-7 h-auto rounded-sm" alt="IT">
                                     <span class="font-bold text-sm text-[#064E3B]">Italy</span>
                                 </a>
-                                <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
+                                <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm" aria-label="Order for Romania">
                                     <img src="https://flagcdn.com/w40/ro.png" class="w-7 h-auto rounded-sm" alt="RO">
                                     <span class="font-bold text-sm text-[#064E3B]">Romania</span>
                                 </a>
-                                <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
+                                <a href="#" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm" aria-label="Order for Slovakia">
                                     <img src="https://flagcdn.com/w40/sk.png" class="w-7 h-auto rounded-sm" alt="SK">
                                     <span class="font-bold text-sm text-[#064E3B]">Slovakia</span>
                                 </a>
@@ -157,22 +207,22 @@
                 <div class="space-y-4">
                     <!-- FAQ 1 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                        <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq1">
                             <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q1">Qual a diferença entre MatchaFitty e o chá verde comum?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a1">
+                        <div id="faq1" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a1">
                             Diferente do chá verde tradicional onde as folhas são infundidas e descartadas, com o MatchaFitty você consome a folha inteira cultivada à sombra e moída em pedra. Isso significa que você absorve 100% dos nutrientes e uma concentração significativamente maior de antioxidantes.
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                        <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <button class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false" aria-controls="faq2">
                             <span class="font-bold text-[#064E3B] text-lg pr-4" data-translate="faq_q2">O MatchaFitty contém cafeína? Vai me deixar agitado?</span>
                             <i data-feather="chevron-down" class="text-[#4D7C0F] transition-transform duration-300 min-w-[24px]"></i>
                         </button>
-                        <div class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a2">
+                        <div id="faq2" class="faq-content hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed" data-translate="faq_a2">
                             Sim, contém cafeína natural. No entanto, a presença abundante do aminoácido L-Teanina altera a forma como a cafeína é absorvida, liberando a energia de forma gradual. Isso proporciona um estado de alerta e foco mental profundo, sem a agitação nervosa ou a "queda" brusca associada ao café.
                         </div>
                     </div>
@@ -386,7 +436,7 @@
         window.addEventListener("scroll", reveal);
         reveal();
 
-        // Lógica do Efeito Sanfona (Accordion) para o FAQ
+        // Lógica do Efeito Sanfona (Accordion) para o FAQ com Acessibilidade (ARIA)
         document.querySelectorAll('.faq-button').forEach(button => {
             button.addEventListener('click', () => {
                 const content = button.nextElementSibling;
@@ -397,13 +447,15 @@
                 document.querySelectorAll('.faq-content').forEach(c => {
                     c.classList.add('hidden');
                 });
-                document.querySelectorAll('.faq-button i').forEach(i => {
-                    i.style.transform = 'rotate(0deg)';
+                document.querySelectorAll('.faq-button').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.querySelector('i').style.transform = 'rotate(0deg)';
                 });
 
                 // Abrir o selecionado se estava fechado
                 if (isHidden) {
                     content.classList.remove('hidden');
+                    button.setAttribute('aria-expanded', 'true');
                     icon.style.transform = 'rotate(180deg)';
                 }
             });
