@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +8,26 @@
     <!-- GOOGLE ADS SAFE & ADVANCED SEO             -->
     <!-- ========================================== -->
     
+    <!-- 1. URL Canónica -->
     <link rel="canonical" href="https://matchafitty-eu.vercel.app/">
     <link rel="alternate" hreflang="x-default" href="https://matchafitty-eu.vercel.app/">
     
-    <!-- Hreflang Tags -->
+    <!-- 2. Tags Hreflang para os Países Alvo -->
     <link rel="alternate" hreflang="pl" href="https://matchafitty-eu.vercel.app?lang=pl" />
     <link rel="alternate" hreflang="sk" href="https://matchafitty-eu.vercel.app?lang=sk" />
     <link rel="alternate" hreflang="ro" href="https://matchafitty-eu.vercel.app?lang=ro" />
     <link rel="alternate" hreflang="it" href="https://matchafitty-eu.vercel.app?lang=it" />
 
+    <!-- 3. Metadados SEO -->
     <title data-translate="meta_title">MatchaFitty™ - Desbloqueie Seu Metabolismo Naturalmente</title>
-    <meta name="description" content="Fórmula premium de matcha japonês para apoiar a queima de gordura e energia diária. 50% OFF por tempo limitado.">
+    <meta name="description" content="Fórmula premium de matcha japonês criada para apoiar a queima de gordura e devolver sua energia diária. 50% OFF por tempo limitado.">
     
+    <!-- 4. Open Graph -->
     <meta property="og:type" content="product">
-    <meta property="og:title" content="MatchaFitty™ - 50% OFF">
+    <meta property="og:title" content="MatchaFitty™ - 50% OFF Limited Offer">
     <meta property="og:image" content="images/matchafitty1.png">
 
+    <!-- 5. Dados Estruturados -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -37,16 +41,18 @@
     }
     </script>
 
+    <!-- Tailwind & Fontes -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- Favicon Personalizado -->
     <link rel="icon" href="images/favconmatch.png" type="image/png">
 
     <style>
-        body { font-family: 'Montserrat', sans-serif; }
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
         .star-filled { color: #4D7C0F; }
         .hero-section-bg { background-color: #ECFDF5; position: relative; overflow: hidden; }
         .hero-bg-overlay {
@@ -64,32 +70,34 @@
         }
         .btn-country {
             background: white; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(77, 124, 15, 0.2);
+            border: 1px solid rgba(77, 124, 15, 0.15);
         }
         .btn-country:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(77, 124, 15, 0.1);
+            box-shadow: 0 10px 20px -5px rgba(77, 124, 15, 0.15);
             border-color: #4D7C0F;
         }
     </style>
 </head>
-<body class="bg-white text-gray-800 relative">
+<body class="bg-white text-gray-800 relative overflow-x-hidden">
 
-    <header class="sticky top-0 bg-white/90 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
+    <!-- Cabeçalho (Apenas Logo) -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-center items-center p-3">
-            <img src="images/matchafitty-logo.png" width="100" height="24" alt="MatchaFitty" class="h-9 w-auto">
+            <img src="images/matchafitty-logo.png" width="100" height="24" alt="Logo" class="h-9 w-auto">
         </div>
     </header>
 
     <main>
-        <section id="order" class="hero-section-bg text-[#14532D] py-10 md:py-16">
+        <!-- Secção Hero (Layout Dividido: Texto Esq / Foto Dir) -->
+        <section id="order" class="hero-section-bg text-[#14532D] py-12 md:py-24 min-h-[85vh] flex items-center">
             <div class="hero-bg-overlay"></div>
             
             <div class="container relative z-10 mx-auto px-4 sm:px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10 items-start">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12 items-center">
                     
-                    <!-- LADO ESQUERDO: TEXTO PERSUASIVO -->
-                    <div class="reveal flex flex-col items-center lg:items-start">
+                    <!-- LADO ESQUERDO: TEXTO RESUMIDO -->
+                    <div class="reveal flex flex-col items-center lg:items-start order-2 lg:order-1">
                         
                         <div class="glass-panel rounded-full px-4 py-1.5 mb-6 inline-flex items-center gap-3 shadow-sm">
                             <div class="flex items-center gap-1">
@@ -100,61 +108,35 @@
                             <span class="text-[10px] font-bold uppercase tracking-wider text-[#4D7C0F]" data-translate="discount_badge">🔥 ÚLTIMA CHANCE: 50% OFF</span>
                         </div>
 
-                        <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight tracking-tight text-[#064E3B] text-center lg:text-left" data-translate="hero_title">
+                        <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight tracking-tight text-[#064E3B] text-center lg:text-left" data-translate="hero_title">
                             Desbloqueie Seu Metabolismo Naturalmente Com MatchaFitty™
                         </h1>
                         
-                        <p class="text-base md:text-lg mb-6 text-[#14532D] leading-relaxed font-medium opacity-90 text-center lg:text-left" data-translate="hero_desc">
+                        <p class="text-base md:text-lg mb-10 text-[#14532D] leading-relaxed font-medium opacity-90 text-center lg:text-left" data-translate="hero_desc">
                             Fórmula premium de matcha japonês criada para apoiar a queima de gordura, reduzir o inchaço e devolver sua energia diária — sem dietas extremas ou treinos exaustivos.
                         </p>
 
-                        <!-- Bloco do Problema -->
-                        <div class="mb-8 text-sm md:text-base text-gray-700 bg-white/40 p-5 rounded-2xl border border-white/60" data-translate="problem_text">
-                            <p class="mb-3 font-semibold text-[#064E3B]">Você não está cansada porque falta força de vontade. Seu metabolismo pode estar lento.</p>
-                            <p class="opacity-80">Com o tempo, o corpo acumula gordura abdominal e perde vitalidade. MatchaFitty foi desenvolvido para ajudar você a:</p>
-                        </div>
-
-                        <!-- Checklist de Benefícios -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full mb-8" data-translate="checklist">
-                            <div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]">
-                                <span class="text-[#4D7C0F]">✓</span> Ativar o metabolismo
-                            </div>
-                            <div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]">
-                                <span class="text-[#4D7C0F]">✓</span> Reduzir gordura corporal
-                            </div>
-                            <div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]">
-                                <span class="text-[#4D7C0F]">✓</span> Diminuir o inchaço
-                            </div>
-                            <div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]">
-                                <span class="text-[#4D7C0F]">✓</span> Melhorar foco e disposição
-                            </div>
-                            <div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]">
-                                <span class="text-[#4D7C0F]">✓</span> Hábitos mais saudáveis
-                            </div>
-                        </div>
-
-                        <!-- Imagem Mobile entre os textos -->
-                        <div class="lg:hidden w-full flex justify-center mb-8 reveal">
-                            <img src="images/matchafitty1.png" class="w-64 h-auto drop-shadow-2xl" alt="Produto">
-                        </div>
-
-                        <!-- Botões de País -->
-                        <div class="w-full max-w-md reveal">
-                            <p class="text-[11px] font-bold uppercase tracking-widest text-[#4D7C0F] mb-4 text-center lg:text-left" data-translate="select_cta">👉 Experimente MatchaFitty Hoje (Selecione seu país):</p>
-                            <div class="grid grid-cols-2 gap-3">
-                                <a href="https://tl-track.com/tracker/vXyf/?sub_id={gclid}" class="btn-country flex items-center gap-3 p-3 rounded-xl shadow-sm">
-                                    <img src="https://flagcdn.com/w40/pl.png" class="w-6 h-auto rounded-sm" alt="PL">
+                        <!-- Botões de País (Conversão Direta) -->
+                        <div class="w-full max-w-lg reveal">
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-[#4D7C0F] mb-5 text-center lg:text-left" data-translate="select_cta">👉 Experimente MatchaFitty Hoje (Selecione seu país):</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <!-- Polónia -->
+                                <a href="https://tl-track.com/tracker/vXyf/?sub_id={gclid}" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
+                                    <img src="https://flagcdn.com/w40/pl.png" class="w-7 h-auto rounded-sm" alt="PL">
                                     <span class="font-bold text-sm text-[#064E3B]">Poland</span>
                                 </a>
-                                <a href="https://tl-track.com/tracker/vXyg/?sub_id={gclid}" class="btn-country flex items-center gap-3 p-3 rounded-xl shadow-sm">
-                                    <img src="https://flagcdn.com/w40/it.png" class="w-6 h-auto rounded-sm" alt="IT">
+                                <!-- Itália -->
+                                <a href="https://tl-track.com/tracker/vXyg/?sub_id={gclid}" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
+                                    <img src="https://flagcdn.com/w40/it.png" class="w-7 h-auto rounded-sm" alt="IT">
                                     <span class="font-bold text-sm text-[#064E3B]">Italy</span>
                                 </a>
-                                <a href="https://tl-track.com/tracker/vXyH/?sub_id={gclid}" class="btn-country flex items-center gap-3 p-3 rounded-xl shadow-sm">
+                                <!-- Roménia -->
+                                <a href="https://tl-track.com/tracker/vXyH/?sub_id={gclid}" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
                                     <img src="https://flagcdn.com/w40/ro.png" class="w-6 h-auto rounded-sm" alt="RO">
                                     <span class="font-bold text-sm text-[#064E3B]">Romania</span>
                                 </a>
-                                <a href="https://tl-track.com/tracker/vXyK/?sub_id={gclid}" class="btn-country flex items-center gap-3 p-3 rounded-xl shadow-sm">
+                                <!-- Eslováquia -->
+                                <a href="https://tl-track.com/tracker/vXyK/?sub_id={gclid}" class="btn-country flex items-center gap-4 p-4 rounded-2xl shadow-sm">
                                     <img src="https://flagcdn.com/w40/sk.png" class="w-6 h-auto rounded-sm" alt="SK">
                                     <span class="font-bold text-sm text-[#064E3B]">Slovakia</span>
                                 </a>
@@ -162,11 +144,11 @@
                         </div>
                     </div>
 
-                    <!-- LADO DIREITO: IMAGEM DESKTOP -->
-                    <div class="hidden lg:flex justify-center items-center h-full reveal pt-10">
-                        <div class="relative">
-                            <div class="absolute -inset-10 bg-white/20 blur-3xl rounded-full"></div>
-                            <img src="images/matchafitty1.png" width="550" height="550" alt="MatchaFitty Premium" class="relative z-10 w-full max-w-lg h-auto transform transition hover:scale-105 duration-700 drop-shadow-2xl">
+                    <!-- LADO DIREITO: FOTO DO PRODUTO -->
+                    <div class="flex justify-center items-center h-full reveal order-1 lg:order-2">
+                        <div class="relative w-full max-w-md lg:max-w-xl">
+                            <div class="absolute -inset-10 bg-white/20 blur-[80px] rounded-full"></div>
+                            <img src="images/matchafitty1.png" width="600" height="600" alt="MatchaFitty Premium" class="relative z-10 w-full h-auto transform transition hover:scale-105 duration-1000 drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)]">
                         </div>
                     </div>
 
@@ -175,53 +157,59 @@
         </section>
     </main>
 
-    <footer class="bg-[#064E3B] text-green-50 py-12">
+    <!-- Rodapé -->
+    <footer class="bg-[#064E3B] text-green-50 py-16 border-t border-[#14532D]">
         <div class="container mx-auto px-4 text-center text-sm">
-            <div class="flex items-center justify-center mb-6">
-                <img src="images/matchafitty-logo.png" width="40" height="40" alt="Logo" class="h-8 w-auto brightness-0 invert opacity-80">
+            <div class="flex items-center justify-center mb-10">
+                <img src="images/matchafitty-logo.png" width="40" height="40" alt="Logo" class="h-10 w-auto brightness-0 invert opacity-90">
             </div>
             
-            <div class="flex justify-center flex-wrap gap-4 md:gap-8 mb-10 text-[10px] font-bold uppercase tracking-widest">
-                <button onclick="openModal('privacy')" class="hover:text-white transition-colors" data-translate="link_privacy">Privacidade</button>
-                <button onclick="openModal('terms')" class="hover:text-white transition-colors" data-translate="link_terms">Termos e Condições</button>
-                <button onclick="openModal('refund')" class="hover:text-white transition-colors" data-translate="link_refund">Reembolsos</button>
+            <div class="flex justify-center flex-wrap gap-6 md:gap-12 mb-12 text-[10px] font-extrabold uppercase tracking-[0.2em]">
+                <button onclick="openModal('privacy')" class="hover:text-white transition-colors" data-translate="link_privacy">Privacy Policy</button>
+                <button onclick="openModal('terms')" class="hover:text-white transition-colors" data-translate="link_terms">Terms & Conditions</button>
+                <button onclick="openModal('refund')" class="hover:text-white transition-colors" data-translate="link_refund">Refund Policy</button>
             </div>
 
-            <div class="border-t border-[#14532D] pt-8 text-[10px] text-green-100/30 max-w-3xl mx-auto space-y-2 leading-relaxed">
-                <p>Este site não faz parte do Google™ ou Facebook™. Resultados podem variar.</p>
-                <p>© 2026 MatchaFitty. Todos os direitos reservados.</p>
+            <div class="border-t border-white/5 pt-10 text-[10px] text-green-100/30 max-w-4xl mx-auto space-y-4 leading-relaxed">
+                <p>This site is not a part of the Google™ or Facebook™ website. Results may vary depending on individual metabolism and lifestyle.</p>
+                <p>© 2026 MatchaFitty™. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- MODAL LEGAIS -->
     <div id="policy-modal" class="fixed inset-0 z-50 hidden">
-        <div class="fixed inset-0 bg-[#064E3B]/90 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 bg-[#064E3B]/95 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:w-full sm:max-w-2xl flex flex-col border border-gray-100">
-                    <div class="bg-white px-6 py-4 border-b border-gray-100 flex justify-between items-center sticky top-0 z-20">
-                        <h3 class="text-lg font-bold text-[#064E3B]" id="modal-title">Legal Information</h3>
-                        <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600"><i data-feather="x"></i></button>
+                <div class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-2xl transition-all sm:w-full sm:max-w-3xl flex flex-col border border-gray-100">
+                    <div class="bg-white px-8 py-5 border-b border-gray-100 flex justify-between items-center sticky top-0 z-20">
+                        <h3 class="text-xl font-bold text-[#064E3B]" id="modal-title">Legal Information</h3>
+                        <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                            <i data-feather="x"></i>
+                        </button>
                     </div>
-                    <div class="p-8 overflow-y-auto text-sm text-gray-600 leading-relaxed" id="modal-content"></div>
-                    <div class="bg-gray-50 px-6 py-4 border-t border-gray-100 text-right">
-                        <button onclick="closeModal()" class="bg-[#064E3B] text-white px-8 py-2 rounded-lg font-bold text-sm" data-translate="btn_close">Fechar</button>
+                    <div class="p-10 overflow-y-auto text-sm text-gray-600 leading-relaxed" id="modal-content"></div>
+                    <div class="bg-gray-50 px-8 py-5 border-t border-gray-100 text-right">
+                        <button onclick="closeModal()" class="bg-[#064E3B] text-white px-10 py-2.5 rounded-xl font-bold text-sm hover:bg-[#14532D] transition-all" data-translate="btn_close">Fechar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- SCRIPT DE TRADUÇÃO E DINÂMICA -->
     <script>
         const translations = {
             'pt': {
                 'discount_badge': '🔥 ÚLTIMA CHANCE: 50% OFF',
                 'hero_title': 'Desbloqueie Seu Metabolismo Naturalmente Com MatchaFitty™',
                 'hero_desc': 'Fórmula premium de matcha japonês criada para apoiar a queima de gordura, reduzir o inchaço e devolver sua energia diária — sem dietas extremas ou treinos exaustivos.',
-                'problem_text': '<p class="mb-3 font-semibold text-[#064E3B]">Você não está cansada porque falta força de vontade. Seu metabolismo pode estar lento.</p><p class="opacity-80">Com o tempo, o corpo acumula gordura abdominal e perde vitalidade. MatchaFitty foi desenvolvido para ajudar você a:</p>',
-                'checklist': '<div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]"><span class="text-[#4D7C0F]">✓</span> Ativar o metabolismo</div><div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]"><span class="text-[#4D7C0F]">✓</span> Reduzir gordura corporal</div><div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]"><span class="text-[#4D7C0F]">✓</span> Diminuir o inchaço</div><div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]"><span class="text-[#4D7C0F]">✓</span> Melhorar foco e disposição</div><div class="flex items-center gap-2 text-sm font-bold text-[#064E3B]"><span class="text-[#4D7C0F]">✓</span> Hábitos mais saudáveis</div>',
                 'select_cta': '👉 Experimente MatchaFitty Hoje (Selecione seu país):',
                 'btn_close': 'Fechar',
+                'link_privacy': 'Privacidade',
+                'link_terms': 'Termos e Condições',
+                'link_refund': 'Reembolsos',
                 'meta_title': 'MatchaFitty™ - Desbloqueie Seu Metabolismo Naturalmente'
             },
             'pl': {
@@ -229,13 +217,15 @@
                 'hero_title': 'Odblokuj swój metabolizm naturalnie z MatchaFitty™',
                 'hero_desc': 'Japońska formuła matcha klasy premium wspierająca spalanie tłuszczu, redukcję obrzęków i przywracająca energię.',
                 'select_cta': '👉 Wypróbuj MatchaFitty dziś (Wybierz swój kraj):',
-                'meta_title': 'MatchaFitty™ - Odblokuj swój metabolizm'
+                'btn_close': 'Zamknij',
+                'meta_title': 'MatchaFitty™ - Odblokuj swój metabolizm naturalnie'
             },
             'it': {
                 'discount_badge': '🔥 ULTIMA OCCASIONE: 50% DI SCONTO',
                 'hero_title': 'Sblocca il tuo metabolismo naturalmente con MatchaFitty™',
                 'hero_desc': 'Formula premium di matcha giapponese creata per supportare il metabolismo e l\'energia naturale senza diete estreme.',
                 'select_cta': '👉 Prova MatchaFitty oggi (Seleziona il tuo paese):',
+                'btn_close': 'Chiudi',
                 'meta_title': 'MatchaFitty™ - Sblocca il tuo metabolismo'
             },
             'ro': {
@@ -243,6 +233,7 @@
                 'hero_title': 'Deblocați-vă metabolismul în mod natural cu MatchaFitty™',
                 'hero_desc': 'Formulă premium de matcha japonez creată pentru a sprijini arderea grăsimilor și energia zilnică.',
                 'select_cta': '👉 Încearcă MatchaFitty astăzi (Alege țara):',
+                'btn_close': 'Închide',
                 'meta_title': 'MatchaFitty™ - Deblocați-vă metabolismul'
             },
             'sk': {
@@ -250,14 +241,15 @@
                 'hero_title': 'Naštartujte svoj metabolizmus prirodzene s MatchaFitty™',
                 'hero_desc': 'Prémiová japonská matcha formula pre spaľovanie tukov a obnovu dennej energie.',
                 'select_cta': '👉 Vyskúšajte MatchaFitty dnes (Vyberte krajinu):',
+                'btn_close': 'Zatvoriť',
                 'meta_title': 'MatchaFitty™ - Naštartujte svoj metabolizmus'
             }
         };
 
         const legalTexts = {
-            terms: `<h2 class="text-xl font-bold mb-4">TERMS & CONDITIONS</h2><p>Standard retail purchase agreement for MatchaFitty products via distance selling.</p>`,
-            privacy: `<h2 class="text-xl font-bold mb-4">PRIVACY POLICY</h2><p>Your data is protected under GDPR guidelines.</p>`,
-            refund: `<h2 class="text-xl font-bold mb-4">REFUND POLICY</h2><p>30-day satisfaction guarantee for our premium formula.</p>`
+            terms: `<h2 class="text-2xl font-bold mb-6">TERMS & CONDITIONS</h2><p class="mb-4">The Internet store, located at (iframe-matchafitty-it.products-sweet.xyz) hereinafter referred to as the "Seller", publishes a Public Offer on the sale of Goods by remote means.</p><h3 class="font-bold mt-6 mb-2">1. DEFINITION OF TERMS</h3><p class="mb-4">1.1. «The Public Offer» – the seller’s public offer to enter into a purchase-and-sale agreement.</p><h3 class="font-bold mt-6 mb-2">2. GENERAL CONDITIONS</h3><p class="mb-4">2.2. The order by the Buyer means that the Buyer agrees with all the terms of this Offer.</p>`,
+            privacy: `<h2 class="text-2xl font-bold mb-6">POLITICA SULLA PRIVACY</h2><h3 class="font-bold mb-4">1. Protezione dei dati personali</h3><p class="mb-4">Abbiamo introdotto strumenti di segurança per proteggere i tuoi dati personali durante l'immissione e o trabalho com as tuas informações.</p><h3 class="font-bold mt-6 mb-2">2. Raccolta e utilizzo</h3><p class="mb-4">Non useremo e non condivideremo le tue informazioni con nessuno se non come descritto in questa Informativa.</p>`,
+            refund: `<h2 class="text-2xl font-bold mb-6">REFUND POLICY</h2><p class="mb-4">We offer a 30-day satisfaction guarantee. If you are not satisfied, contact us at complaincontact@gmail.com.</p><p class="mb-4">Returns are processed within 10 days of receipt.</p>`
         };
 
         function openModal(type) {
@@ -274,7 +266,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const userLang = navigator.language.substring(0, 2).toLowerCase(); 
             const urlParams = new URLSearchParams(window.location.search);
-            const targetLang = urlParams.get('lang') || (translations[userLang] ? userLang : 'pt');
+            const targetLang = urlParams.get('lang') || (translations[userLang] ? userLang : 'en');
 
             if (translations[targetLang]) {
                 document.querySelectorAll('[data-translate]').forEach(el => {
